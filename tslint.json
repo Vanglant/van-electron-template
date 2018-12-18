@@ -1,8 +1,14 @@
 {
-    "extends": ["tslint:latest", "tslint-react"],
-    "rules": {
-      "interface-name": [true, "never-prefix"],
-      "jsx-boolean-value": ["error", "never"],
-      "jsx-no-multiline-js": ["error", "never"]
-    }
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "interface-name": false
   }
+}
